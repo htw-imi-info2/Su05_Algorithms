@@ -16,8 +16,9 @@ public class EuclidTest {
 
 	@Parameterized.Parameters
 	public static Collection<Object[]> pairs() {
-		return Arrays.asList(new Object[][] { { 144, 12, 12 }, { 12, 144, 12 },
-				{ 8, 6, 2 }, { 13, 7, 1 }
+		return Arrays.asList(new Object[][] { 
+				{ 144, 12, 12 }, { 12, 144, 12 },
+				{ 8, 6, 2 }, { 13, 7, 1 },{ 44, 12, 4 }
 
 		});
 	}

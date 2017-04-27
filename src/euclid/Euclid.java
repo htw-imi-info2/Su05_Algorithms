@@ -38,7 +38,7 @@ public class Euclid {
 		int m1 = n1;
 		int m2 = n2;
 		while ((m1 != 0) && (m2 != 0)) {
-			if (m1 > m2) {
+			if (m1 > m2) { 
 				m1 = m1 % m2;
 			} else {
 				m2 = m2 % m1;

@@ -37,16 +37,16 @@ public class MaximumSubArray {
 	public Result bruteForce(int[] a) {
 		int maxSum = 0;
 		int start = -1, end = -1;
-		for (int low = 0; low < a.length; low++) {
-			for (int high = low; high < a.length; high++) {
+		for (int lower = 0; lower < a.length; lower++) {
+			for (int upper = lower; upper < a.length; upper++) {
 				int thisSum = 0;
-				for (int k = low; k <= high; k++) {
+				for (int k = lower; k <= upper; k++) {
 					thisSum += a[k];
 				}
 				if (thisSum > maxSum) {
 					maxSum = thisSum;
-					start = low;
-					end = high;
+					start = lower;
+					end = upper;
 				}
 			}
 		}
